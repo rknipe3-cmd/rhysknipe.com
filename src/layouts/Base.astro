@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+const { title = 'Rhys Knipe — Content Specialist' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rhys Knipe is a Content Specialist with expertise in SEO, AEO, and technical content for the open source and enterprise tech space." />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content="Content Specialist — SEO, AEO, and enterprise tech content. Based in Las Palmas de Gran Canaria." />
+  <meta property="og:image" content="/rhys-headshot.webp" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>{title}</title>
+</head>
+<body>
+  <slot />
+</body>
+</html>

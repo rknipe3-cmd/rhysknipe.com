@@ -1,0 +1,256 @@
+---
+import Base from '../layouts/Base.astro';
+
+const work = [
+{
+    type: 'Press Release',
+    title: 'Canonical releases Ubuntu 26.04 LTS Resolute Raccoon',
+    desc: 'Global launch press release for Ubuntu\'s 11th long-term support release, covering Linux 7.0 kernel features, enterprise security improvements, and AI/ML platform advances. Picked up by open source media including The Register, with messaging that shaped third-party narrative coverage.',
+    url: 'https://canonical.com/blog/canonical-releases-ubuntu-26-04-lts-resolute-raccoon',
+    tag: 'Canonical',
+    featured: true,
+    screenshot: '/work-ubuntu-lts.webp',
+  },
+{
+    type: 'Blog Post',
+    title: 'Lonestar: taking data centres to the moon',
+    screenshot: '/work-lonestar.webp',
+    desc: 'Feature blog on Lonestar\'s lunar data centre mission and its use of Ubuntu, written for a general tech audience. A rare opportunity to explain enterprise infrastructure in the context of one of the most ambitious computing projects ever attempted.',
+    url: 'https://ubuntu.com/blog/lonestar-data-centre-moon',
+    tag: 'Canonical',
+    featured: false,
+  },
+  {
+    type: 'Hub',
+    title: '20 years of Ubuntu',
+    desc: 'A page to celebrate 20 years of Ubuntu and the wider community, balancing fun, openness, and our vision for the future. Features social media contributions, historical mascots, and a timeline of key moments.',
+    url: 'https://ubuntu.com/20years',
+    tag: 'Canonical',
+    featured: false,
+    screenshot: '/work-20years.webp',
+  },
+{
+    type: 'Solutions Page',
+    title: 'Ubuntu OS — The enterprise OS made for everyone',
+    screenshot: '/work-ubuntu-os.webp',
+    desc: 'Revamp of the Ubuntu OS solutions page, repositioning Ubuntu across the full enterprise compute spectrum — from desktop to edge. Ranked in the top 3 of approximately 10 Canonical solutions pages by traffic.',
+    url: 'https://canonical.com/solutions/ubuntu-os',
+    tag: 'Canonical',
+    featured: false,
+  },
+{
+    type: 'Case Study',
+    title: 'Unibap — Robust and accessible space computing with Ubuntu',
+    screenshot: '/work-unibap.webp',
+    desc: 'Case study on how Unibap selected Ubuntu to power its satellite edge computing hardware, enabling 40 experiments to run from a single space computer. Covers the challenge of pioneering AI and edge computing on aging satellite infrastructure, and why OS robustness and developer accessibility were decisive factors.',
+    url: 'https://canonical.com/case-study/unibap-space-computing',
+    tag: 'Canonical',
+    featured: false,
+  },
+{
+    type: 'Product Page',
+    title: 'Workshop — Composable, fast, and secure dev environments',
+    screenshot: '/work-workshop.webp',
+    desc: 'Product page for Ubuntu Workshop, a new tool for launching sandboxed, agent-ready development environments. Translated a complex developer tool into clear, benefit-led copy for enterprise and developer audiences.',
+    url: 'https://ubuntu.com/workshop',
+    tag: 'Canonical',
+    featured: false,
+  },
+  {
+    type: 'Video Script',
+    title: 'An introduction to Ubuntu Core',
+    desc: "Video script written for Canonical's IoT product manager, running through the architecture of Ubuntu Core. My role was to ensure that the technical overview was presented in a friendly, digestible way.",
+    url: 'https://www.youtube.com/watch?v=zf9bapbzb8o',
+    tag: 'Canonical',
+    featured: false,
+    screenshot: '/work-ubuntu-core-video.webp',
+  },
+{
+    type: 'Solutions Page',
+    title: 'IoT and devices — Build, secure and manage at scale',
+    screenshot: '/work-iot.webp',
+    desc: 'End-to-end revamp of the IoT and Devices solutions page, one of Canonical\'s top-traffic solutions pages. Established clearer messaging around the full IoT lifecycle, from development to production.',
+    url: 'https://canonical.com/solutions/iot-and-devices',
+    tag: 'Canonical',
+    featured: false,
+  },
+{
+    type: 'Blog Post',
+    title: 'What is IoT device management?',
+    screenshot: '/work-iot-mgmt.webp',
+    desc: 'Educational long-form blog post explaining IoT device management concepts to a business audience, translating technical infrastructure concepts into practical, decision-useful language.',
+    url: 'https://ubuntu.com/blog/what-is-iot-device-management',
+    tag: 'Canonical',
+    featured: false,
+  },
+{
+    type: 'Case Study',
+    title: 'Grundium — Ubuntu Pro for Devices in medical imaging',
+    screenshot: '/work-grundium.webp',
+    desc: 'Case study on Grundium\'s use of Ubuntu Pro for Devices to power its medical-grade scanning hardware, covering security, compliance, and the commercial advantages of long-term OS support in regulated environments.',
+    url: 'https://canonical.com/case-study/grundium-ubuntu-pro-for-devices',
+    tag: 'Canonical',
+    featured: false,
+  },
+{
+    type: 'Whitepaper',
+    title: 'Best practice guide to procuring hardware for Linux',
+    screenshot: '/work-hardware.webp',
+    desc: 'Practical guide helping enterprise buyers navigate Linux hardware procurement decisions. Combines technical guidance with business-level framing to serve both IT decision-makers and procurement teams.',
+    url: 'https://assets.ubuntu.com/v1/5b756826-the_best_practice_guide_to_procuring_hardware_for_linux.pdf',
+    tag: 'Canonical',
+    featured: false,
+  },
+{
+    type: 'Report',
+    title: '2022 Learning Trends Report',
+    desc: 'Insight report based on a survey of 300 QA customers, covering learning culture, training for uncertainty, and empowering learners. Exceeded the new contact target of 150 by achieving 250 email opt-ins via the accompanying social and email campaign.',
+    url: '/qa-report.pdf',
+    tag: 'QA Ltd',
+    featured: false,
+    screenshot: '/work-qa-report.webp',
+  },
+{
+    type: 'Blog Post',
+    title: 'Going Swiss: How VMware training can streamline your multi-cloud systems',
+    screenshot: '/work-swiss.webp',
+    desc: 'Ghost-written blog explaining cloud computing in business terms for a non-technical audience, syndicated as part of a lead generation series for cloud computing courses.',
+    url: 'https://www.qa.com/about-qa/our-thinking/going-swiss-how-vmware-training-can-streamline-your-multi-cloud-systems/',
+    tag: 'QA Ltd',
+    featured: false,
+  },
+{
+    type: 'Blog Post',
+    title: 'Top 10 Data Trends for 2023',
+    screenshot: '/work-data-trends.webp',
+    desc: 'Ghost-written long-form blog making data analytics accessible to a lay audience, using concrete examples to overcome skepticism toward data-driven decision making.',
+    url: 'https://www.qa.com/about-qa/our-thinking/data-trends/',
+    tag: 'QA Ltd',
+    featured: false,
+  },
+];
+
+const featuredWork = work.filter(w => w.featured);
+const otherWork = work.filter(w => !w.featured);
+---
+<Base>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Rhys <span>Knipe</span></a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Content Specialist</p>
+        <h1>Words that work<br/>in search and beyond</h1>
+        <p class="hero-bio">
+          I turn complex technical subjects into content that is genuinely useful, not just visible. At Canonical, the company behind Ubuntu, I write about Linux, IoT infrastructure, and the open source ecosystem, covering everything from kernel features to data centres on the Moon. I also built the content team's SEO and answer engine optimisation processes from scratch, but always with the same goal: making sure the right content reaches the right people, in a format worth reading.
+        </p>
+        <div class="hero-meta">
+          <span>📍 Las Palmas de Gran Canaria, Spain</span>
+          <span>🏢 Content Specialist at Canonical</span>
+          <span>🌍 Irish citizen — EU and UK right to work</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#work" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--secondary">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="/rhys-headshot.webp" alt="Rhys Knipe speaking at Ubuntu Summit" />
+      </div>
+    </div>
+  </header>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="container container--wide">
+      <p class="section-label">Selected work</p>
+      
+      <p class="section-intro">
+        I am a writer with a background in Modern Languages, with 5 years writing about technology (and helping people understand its importance!). For me, discoverability only matters when there is content worth finding. Here is some of mine.
+      </p>
+      <div class="work-grid">
+        {featuredWork.map(item => (
+          <a href={item.url} target="_blank" rel="noopener noreferrer" class="work-card work-card--featured">
+            {item.screenshot && (
+              <div class="work-card-screenshot">
+                <img src={item.screenshot} alt={item.title} />
+              </div>
+            )}
+            <div class="work-card-body">
+              <span class="work-card-type">{item.type}</span>
+              <span class="work-card-tag">{item.tag}</span>
+              <h3 class="work-card-title">{item.title}</h3>
+              <p class="work-card-desc">{item.desc}</p>
+              <span class="work-card-arrow">Read more →</span>
+            </div>
+          </a>
+        ))}
+        {(() => {
+          let lastTag = '';
+          return otherWork.map(item => {
+            const showDivider = item.tag !== lastTag && lastTag !== '';
+            lastTag = item.tag;
+            return (
+              <>
+                {showDivider && (
+                  <div class="work-divider">
+                    <span class="work-divider-label">Earlier work — {item.tag}</span>
+                  </div>
+                )}
+                <a href={item.url} target="_blank" rel="noopener noreferrer" class={`work-card${item.screenshot ? ' work-card--has-screenshot' : ''}`}>
+                  {item.screenshot && (
+                    <div class="work-card-screenshot work-card-screenshot--small">
+                      <img src={item.screenshot} alt={item.title} />
+                    </div>
+                  )}
+                  <div class="work-card-body">
+                    <span class="work-card-type">{item.type}</span>
+                    <span class="work-card-tag">{item.tag}</span>
+                    <h3 class="work-card-title">{item.title}</h3>
+                    <p class="work-card-desc">{item.desc}</p>
+                    <span class="work-card-arrow">Read more →</span>
+                  </div>
+                </a>
+              </>
+            );
+          });
+        })()}
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">Get in touch</p>
+      <h2>Let's work together</h2>
+      <p>
+        I am open to content, SEO, and AEO-focused roles — full-time or freelance, remote or hybrid. 
+        If you are working on something that needs clear thinking and good writing, I would love to hear from you.
+      </p>
+      <div class="hero-ctas">
+        <a href="mailto:rknipe3@gmail.com" class="btn btn--primary">Email me</a>
+        <a href="https://linkedin.com/in/rhysknipe" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="/" class="footer-logo">Rhys Knipe</a>
+      <span>© 2026 — Las Palmas de Gran Canaria</span>
+    </div>
+  </footer>
+</Base>
