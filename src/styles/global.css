@@ -675,3 +675,11 @@ footer {
     grid-column: span 1;
   }
 }
+
+/* Align Read more to bottom of cards */
+.work-card { display: flex; flex-direction: column; }
+.work-card .work-card-body { display: flex; flex-direction: column; flex: 1; }
+.work-card .work-card-arrow { margin-top: auto; }
+.work-card--featured { display: flex; }
+.work-card--featured .work-card-body { display: flex; flex-direction: column; flex: 1; }
+.work-card--featured .work-card-arrow { margin-top: auto; }
